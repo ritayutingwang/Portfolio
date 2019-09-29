@@ -2,7 +2,7 @@
 title: Increase people’s confidence to make a sale on Carousell
 date: "2019-09-30T22:12:03.284Z"
 description: This is a custom description for SEO and Open Graph purposes, rather than the default generated excerpt. Simply add a description field to the frontmatter.
-
+coverImage: "https://source.unsplash.com/random/1600x900"
 ---
 
 ## Background
