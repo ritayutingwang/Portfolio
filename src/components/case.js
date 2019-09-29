@@ -9,6 +9,7 @@ function Case({post}) {
     const title = post.frontmatter.title || post.fields.slug
     return (
         <div key={post.fields.slug}>
+            <img style={{ margin: 0, width: "100%" }} src={post.frontmatter.coverImage} alt="Gatsby Scene" />
             <h3
             style={{
                 marginBottom: rhythm(1 / 4),

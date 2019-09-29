@@ -24,11 +24,12 @@ class BlogPostTemplate extends React.Component {
             ...scale(-1 / 5),
             display: `block`,
             marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
+            marginTop: rhythm(1),
           }}
         >
           {post.frontmatter.date}
         </p>
+        <img style={{ margin: 0, width: "100%" }} src={post.frontmatter.coverImage} alt="Gatsby Scene" />
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
           style={{
