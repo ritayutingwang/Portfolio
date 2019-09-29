@@ -7,7 +7,6 @@
 
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
 import styled from "styled-components"
 
 import { rhythm } from "../utils/typography"
@@ -19,31 +18,26 @@ function Bio() {
       render={data => {
         const { author, social } = data.site.siteMetadata
         return (
-          <Container>
-            <Image
-              fixed={data.avatar.childImageSharp.fixed}
-              alt={author}
-              style={{
-                marginRight: rhythm(1 / 2),
-                marginBottom: 0,
-                minWidth: 50,
-                borderRadius: `100%`,
-              }}
-              imgStyle={{
-                borderRadius: `50%`,
-              }}
-            />
-            <p>
-              <strong>{author}</strong> is from Taiwan and currently works at Carousell in Singapore.
-              {` `} You can find her on {` `} 
-              <a href={`https://twitter.com/${social.twitter}`} target="_blank">
-                Twitter
-              </a> {` `}
-              <a href={`https://linkedin.com/in/${social.linkedin}`} target="_blank">
-                LinkedIn
-              </a>
-            </p>
-          </Container>
+          <div style={{
+            backgroundColor: ``,
+          }}>
+            <h1>👋 Hi, I am Rita, working as Senior Product Designer at Carousell.</h1>
+            <p>I am passionate in solving problems with technology to achieve a simple, equal, and sustainable world. I code and I love to make things happen.</p>
+            <Container>
+              <p>
+                You can find me on {` `}
+                <a href={`https://medium.com/@${social.medium}`} target="_blank">
+                  Medium
+                </a> {` `}
+                <a href={`https://linkedin.com/in/${social.linkedin}`} target="_blank">
+                  LinkedIn
+                </a> {` `}
+                <a href={`https://twitter.com/${social.twitter}`} target="_blank">
+                  Twitter
+                </a> {` `}
+              </p>
+            </Container>
+          </div>
         )
       }}
     />

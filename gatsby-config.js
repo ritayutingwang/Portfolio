@@ -7,7 +7,8 @@ module.exports = {
     siteUrl: `https://ritayutingwang.com/`,
     social: {
       twitter: `ritayutingwang`,
-      linkedin: `ritayutingwang`
+      linkedin: `ritayutingwang`,
+      medium: `ritayutingwang`,
     },
   },
   plugins: [

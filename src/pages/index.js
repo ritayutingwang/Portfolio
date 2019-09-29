@@ -9,9 +9,9 @@ import { rhythm } from "../utils/typography"
 
 class IndexPage extends React.Component {
   render() {
-    const siteTitle = "👋 Hi, I am Rita."
     const { data } = this.props
     const posts = data.allMarkdownRemark.edges
+    const siteTitle = ""
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -19,12 +19,6 @@ class IndexPage extends React.Component {
           title="Home"
           keywords={[`portfolio`, `gatsby`, `javascript`, `react`]}
         />
-        
-        <p>I am a Product Designer working on the largest C2C marketplace in South East Asia.</p>
-        
-        
-      
-        <SEO title="All posts" />
         <Bio />
         <div style={{ margin: "20px 0 40px" }}>
           {posts.map(({ node }) => {
