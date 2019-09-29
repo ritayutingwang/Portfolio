@@ -34,11 +34,13 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in San
-              Francisco building useful things.
-              {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
+              <strong>{author}</strong> is from Taiwan and currently works at Carousell in Singapore.
+              {` `} You can find her on {` `} 
+              <a href={`https://twitter.com/${social.twitter}`} target="_blank">
+                Twitter
+              </a> {` `}
+              <a href={`https://linkedin.com/in/${social.linkedin}`} target="_blank">
+                LinkedIn
               </a>
             </p>
           </Container>
