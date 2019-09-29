@@ -37,6 +37,7 @@ const postQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            coverImage
           }
         }
       }
