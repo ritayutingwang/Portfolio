@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import PropTypes from "prop-types"
 import { rhythm } from "../utils/typography"
 import Button from "../components/button"
+import styled from "styled-components"
 
 function Case({post}) {
     
@@ -10,19 +11,20 @@ function Case({post}) {
     return (
         <div key={post.fields.slug}>
             <img style={{ margin: 0, width: "100%" }} src={post.frontmatter.coverImage} alt="Gatsby Scene" />
+            <small>{post.frontmatter.date}</small>
             <h3
-            style={{
-                marginBottom: rhythm(1 / 4),
-            }}
+                style={{
+                    marginTop: rhythm(1/4),
+                    marginBottom: rhythm(1 / 4),
+                }}
             >
-            <Link
-                style={{ boxShadow: `none` }}
+            <Title
                 to={`blog${post.fields.slug}`}
             >
                 {title}
-            </Link>
+            </Title>
             </h3>
-            <small>{post.frontmatter.date}</small>
+            
             <p
             dangerouslySetInnerHTML={{
                 __html: post.frontmatter.description || post.excerpt,
@@ -40,4 +42,15 @@ Case.defaultProps = {
 Case.propTypes = {
   post: PropTypes.object,
 }
+const Title = styled(Link)`
+    box-shadow: none; 
+    line-height: 1.6;
+    color: #262626; 
+
+    &:hover {
+        
+        color: #4455BB;
+      }
+    
+`;
 export default Case
